@@ -3,6 +3,10 @@
 @import url(./fonts.css);
 @import url(./partials/_variables.css);
 @import url(./partials/_global.css);
+
+html {
+  scroll-behavior: smooth;
+}
 .header_area .main-menu .navbar .navbar-brand {
   padding: 0 2rem 0 5rem;
 }
@@ -18,7 +22,7 @@
   color: var(--title-color);
 }
 
-.header_area .main-menu .navbar-nav .nav-item .nav-link.active {
+.header_area .main-menu .navbar-nav .active a {
   background: var(--gradient-color);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -56,7 +60,7 @@
 }
 
 .site-main .site-banner .site-title h1 {
-  font-size: 4rem;
+  font-size: 5rem;
 }
 
 .site-main .site-banner .site-title h4 {
@@ -89,7 +93,7 @@
 
 /* Start Brand Area */
 .site-main .brand-area {
-  padding: 1rem 2rem;
+  padding: 1rem 20rem;
   margin-bottom: 4rem;
 }
 
@@ -101,8 +105,8 @@
 .site-main .brand-area .first-row .col-lg-4 > .single-brand {
   border: 1px solid var(--border-color);
   text-align: center;
-  padding: 1.8rem;
-  margin: 0.9 rem 0;
+  padding: 1.8rem 0rem;
+  margin: 0.9rem 0;
   width: 180px;
   height: 100px;
   cursor: pointer;
@@ -255,7 +259,7 @@
 }
 
 .site-main .about-area .owl-carousel .owl-dots .owl-dot.active span {
-  background-color: var(--primary-color);
+  background: var(--primary-color);
   width: 12px;
   height: 12px;
 }
@@ -311,7 +315,7 @@ footer.footer-area {
 }
 
 footer.footer-area .social h5 {
-  font: normal 500 23px/30px var(--roboto);
+  font: normal 500 23px/ 30px var(--roboto);
 }
 
 footer.footer-area .social a > i {
