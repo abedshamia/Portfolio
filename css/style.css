@@ -299,7 +299,7 @@ html {
 }
 
 .site-main .subscribe-us-area .subscribe form .input-textbox input {
-  width: 100%;
+  width: 50rem;
   padding: 1.5rem 1rem;
   border: 1px solid whitesmoke;
   background: transparent;
@@ -326,7 +326,6 @@ html {
   font-size: 1.1rem;
   padding: 0.7rem 2rem;
   text-align: center;
-  margin-right: 40%;
   margin-top: 2rem;
   transition: all 0.7s ease;
   outline: none;
@@ -337,6 +336,13 @@ html {
   color: whitesmoke;
   outline: none;
   box-shadow: inset 0 0 0 2px var(--primary-color);
+}
+
+.input-textbox {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 /* End Subscribe Me */
