@@ -1,6 +1,6 @@
 /* Viewport 340px */
 
-@media only screen and (max-width: 340px) {
+@media only screen and (max-width: 391px) {
   .header_area .main-menu .navbar,
   .header_area .main-menu .navbar .navbar-brand,
   .site-main .subscribe-us-area .subscribe .subscribe-title,
@@ -25,15 +25,21 @@
 
   .site-main .subscribe-us-area .subscribe form .input-textbox input,
   .site-main .subscribe-us-area .subscribe form .input-textbox textarea {
-    width: 15rem !important;
-  }
-
-  .site-main .subscribe-us-area .subscribe form .input-textbox .btn-submit {
-    margin-left: 12rem;
+    width: 100% !important;
   }
 
   .site-main > .services-area .services {
-    width: 13rem;
+    width: 12rem;
+    margin: 4rem 1rem 4rem 0;
+  }
+
+  .input-textbox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    padding: 0 1.8rem;
   }
 
   .footer-img {
@@ -83,13 +89,21 @@
 
   .site-main .subscribe-us-area .subscribe form .input-textbox input,
   .site-main .subscribe-us-area .subscribe form .input-textbox textarea {
-    width: 20rem;
+    width: 100%;
     margin: 5%;
+  }
+
+  .input-textbox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 0 1.8rem;
   }
 
   .introduce {
     width: 80%;
-    margin-left: 3.2rem;
+    margin: 4.8rem 0 2.4rem 1.8rem;
   }
 }
 
