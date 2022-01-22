@@ -21,14 +21,18 @@
   background: var(--gradient-color);
   background-clip: padding-box;
   color: whitesmoke;
-  transition: background 0.6s ease;
+  transition: all 0.8s ease-in-out;
   box-shadow: var(--box-shadow);
+  outline: none;
+  border: none;
 }
 
 .button.primary-button:hover {
-  background: whitesmoke;
+  background: #042f59;
   background-clip: padding-box;
-  color: #000;
+  transition: all 0.2s ease-in-out;
+
+  color: #fff;
 }
 
 .button.primary-button::after,
@@ -45,15 +49,17 @@
 }
 
 .button.secondary-button {
-  background: white;
+  background: whitesmoke;
+  outline: none;
+  border: none;
   background-clip: padding-box;
-  transition: background 0.6 ease;
+  transition: all 0.8s ease-in-out;
 }
 
 .button.secondary-button:hover {
+  transition: all 0.4s ease-in-out;
   background: var(--gradient-color);
   color: whitesmoke;
-  box-shadow: var(--box-shadow);
 }
 
 p.para {

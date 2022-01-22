@@ -11,20 +11,41 @@
     margin: 0;
   }
 
+  .navbar-brand img {
+    display: block;
+    margin-left: -1rem !important;
+  }
+
   .site-main .site-banner .site-title h1 {
     font-size: 41px;
   }
+  .site-main .subscribe-us-area .subscribe {
+    margin-left: 1rem;
+  }
 
-  .site-main .subscribe-us-area .subscribe form .input-textbox input {
+  .site-main .subscribe-us-area .subscribe form .input-textbox input,
+  .site-main .subscribe-us-area .subscribe form .input-textbox textarea {
     width: 15rem !important;
+  }
+
+  .site-main .subscribe-us-area .subscribe form .input-textbox .btn-submit {
+    margin-left: 12rem;
   }
 
   .site-main > .services-area .services {
     width: 13rem;
   }
+
+  .footer-img {
+    width: 70%;
+  }
 }
 
 @media only screen and (max-width: 792px) {
+  .navbar-brand img {
+    display: block;
+    margin-left: -5rem;
+  }
   .site-main .about-area .about-title h2 > span {
     font-size: 31px;
     letter-spacing: 10px;
@@ -37,6 +58,7 @@
   .site-main .site-banner .site-title h4 {
     font-size: 20px;
   }
+
   .site-main .brand-area .experience-area .years-area {
     padding-left: 1%;
     width: 49%;
@@ -59,9 +81,15 @@
     padding: 0;
   }
 
-  .site-main .subscribe-us-area .subscribe form .input-textbox input {
+  .site-main .subscribe-us-area .subscribe form .input-textbox input,
+  .site-main .subscribe-us-area .subscribe form .input-textbox textarea {
     width: 20rem;
     margin: 5%;
+  }
+
+  .introduce {
+    width: 80%;
+    margin-left: 3.2rem;
   }
 }
 
