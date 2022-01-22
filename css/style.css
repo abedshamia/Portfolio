@@ -11,6 +11,10 @@ html {
   padding: 0 2rem 0 5rem;
 }
 
+.header_area .main-menu .navbar .navbar-brand img {
+  width: 12rem;
+}
+
 .header_area .main-menu .navbar {
   padding: 1rem 20rem;
 }
@@ -20,6 +24,7 @@ html {
   text-transform: uppercase;
   padding: 1.7rem;
   color: var(--title-color);
+  transition: all 0.6s ease-in-out;
 }
 
 .header_area .main-menu .navbar-nav .active a {
@@ -34,6 +39,7 @@ html {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
+  transition: all 0.6s ease-in-out;
 }
 
 /* End Navigation  */
@@ -142,6 +148,9 @@ html {
   padding-left: 8rem;
   position: relative;
 }
+.introduce {
+  width: 100%;
+}
 
 .site-main .brand-area .experience-area .bg-panel {
   position: absolute;
@@ -183,7 +192,7 @@ html {
 }
 
 .site-main > .services-area .services {
-  background: rgba(248, 252, 253, 0.973);
+  background: rgba(202, 218, 227, 0.075);
   padding: 2rem 0;
   width: 16rem;
   margin: 5rem 0.5rem;
@@ -272,7 +281,9 @@ html {
 /* Subscribe Me  */
 
 .site-main .subscribe-us-area .subscribe {
-  background: url(../img/subscribe-bg.png) no-repeat;
+  background: url(../img/subscribe-bg.png);
+  background-size: cover;
+  height: 100%;
   padding: 10rem 0;
   margin: 3rem auto;
 }
@@ -288,22 +299,44 @@ html {
 }
 
 .site-main .subscribe-us-area .subscribe form .input-textbox input {
-  width: 400px;
+  width: 100%;
   padding: 1.5rem 1rem;
   border: 1px solid whitesmoke;
   background: transparent;
-  color: white;
+  color: #ddd;
   font: normal 500 17px/20px var(--roboto);
+  margin: 2rem 0;
+  transition: all 0.4s ease;
 }
 
 .site-main .subscribe-us-area .subscribe form .input-textbox input::placeholder {
   color: whitesmoke;
 }
 
+.site-main .subscribe-us-area .subscribe form .input-textbox input:focus {
+  outline: none;
+  background-color: white;
+  color: #222;
+}
+
 .site-main .subscribe-us-area .subscribe form .btn-submit button {
   background: whitesmoke;
   color: #000;
+  font-weight: 400;
+  font-size: 1.1rem;
   padding: 0.7rem 2rem;
+  text-align: center;
+  margin-right: 40%;
+  margin-top: 2rem;
+  transition: all 0.7s ease;
+  outline: none;
+}
+
+.site-main .subscribe-us-area .subscribe form .btn-submit button:hover {
+  background: var(--primary-color);
+  color: whitesmoke;
+  outline: none;
+  box-shadow: inset 0 0 0 2px var(--primary-color);
 }
 
 /* End Subscribe Me */
@@ -322,10 +355,15 @@ footer.footer-area .social a > i {
   font-size: 22px;
   padding: 2rem;
   color: var(--border-color);
+  transition: all 0.7s ease;
 }
 
 footer.footer-area .social a:hover > i {
   color: var(--primary-color);
+}
+
+.footer-img {
+  opacity: 0.9;
 }
 
 /* End Footer Area */
